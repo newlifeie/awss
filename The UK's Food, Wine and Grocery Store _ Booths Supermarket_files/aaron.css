@@ -1,0 +1,674 @@
+.accountWine {
+    margin: 0 auto !important;
+    display: block;
+}
+
+#content {
+	/* float: none !important; */
+}
+
+#content-full p {font-size:1.2em; font-family: 'Gill Sans W01 Book',Arial,Helvetica,sans-serif;}
+
+#site {
+	float: none;
+	margin: 65px auto 0 auto;
+}
+
+#breadcrumbs {
+	margin: 6px auto 0 auto;
+	float: none;
+	color:#ffffff;
+}
+#breadcrumbs p, #breadcrumbs a{
+	font-size:16px !important;
+	color:#B8755F !important;
+}
+
+#footer {
+	max-width: none;
+    background-color: #373a36;
+}
+
+.blogRecentPost {
+	width: 92%;
+}
+
+#homePageContentContainer {
+	margin-top: -2px ;
+	margin-bottom:10px;
+}
+
+.debug-lol {
+	background: rgba(255, 0, 0, 0.2);
+}
+
+.container.padded.filled2 {
+	background: #AD001B; 
+}
+
+.first {
+	clear: both;
+}
+
+.split.left.third {
+	width: 31.3333333333333333%;
+	margin-right: 3%;
+}
+
+.split.left.third.last {
+	margin-right: 0;
+}
+
+#welcomeBanner {
+	height: auto !important;
+}
+#welcomeBanner.page-dark,
+#welcomeBanner.page {
+	margin-top: 0;
+}
+#welcomeBanner.page h1 {
+	border-bottom: solid 1px #fff;
+	padding-bottom: 29px;
+	font-size: 48px;
+}
+#welcomeBanner.page-dark h1 {
+	border-bottom: solid 1px #56524f;
+	padding-bottom: 29px;
+	font-size: 48px;
+}
+#welcomeBanner.page h1,
+#welcomeBanner.page h2 {
+	color: white;
+}
+#welcomeBanner.page-dark h1,
+#welcomeBanner.page-dark h2 {
+	color: #ffffff;
+}
+
+#welcomeBanner.page h2 {
+	width: 85%;
+	font-size: 24px;
+}
+
+#welcomeBanner .wrapperPage #welcomeBannerContent {
+	margin: 0;
+}
+#welcomeBanner .wrapperPage {
+	width: 62.6%;
+	height: auto;
+	margin: 0 auto;
+	position: relative;
+	min-height: 1px;
+	overflow: hidden;
+}
+
+#welcomeBannerContent h2 {
+	/* height: auto; */	
+    float: left;
+    width: auto;
+	clear:left;
+}
+
+
+/*
+ * Cellar
+ */
+
+
+.product.quarter {
+	width: 22%;
+	margin-right: 3% !important;
+	float: left;
+}
+
+.prodImg {
+	width: 100%;
+}
+
+.container.product .meta {
+	bottom: 2px !important;	
+}
+
+.product.featured h3 a {
+	color: #444C3F;
+	text-shadow:none;
+}
+
+
+
+.container.padded2 {
+	padding: 10px;
+}
+
+.container.product.margin.fifth {
+	width:17%;
+	float:left;
+	margin:0 0 2.5% 3%;
+}
+.container.product.margin.fifth.first {
+    clear: both;
+	width:17%;
+	margin:0% 0 0.5% 0;
+	float:left;
+}
+
+/*
+ * Food & Drink
+ */
+
+.fnd {
+	margin-bottom: 10px;
+}
+
+.fnd.split {
+	width: 49%;
+}
+
+.fnd.left {
+	margin-right: 1%;
+}
+.fnd.right {
+	margin-left: 1%;
+}
+
+.fnd .lineBreak {
+	
+}
+
+.fnd .smallContentHolderBox .imageHolderDescription {
+	bottom:0px;
+}
+
+.fnd-cont.smallContentHolderBox {
+	max-height: none !important;
+	max-width: none !important;
+	margin:1% 1% 1% 0 !important;
+}
+
+.fndslide {
+	display: inline;
+	width: 100%;
+}
+
+#site .fndHead  {
+	color: white;
+	font-size: 30px;
+
+}
+#site .fndDesc  {
+	color: #ffffff;
+	padding:0 0 3% 0;
+}
+
+
+.block.wp-post-image{width:100%;height:auto;float:left;}
+
+.fnd-cont.smallContentHolderBox.slide-big {
+	height: 540px;
+}
+.fnd-cont.smallContentHolderBox.slide-big img {
+	width: auto;
+}
+
+.page-template-page-blue-design-php #breadcrumbs a,
+.page-template-page-blue-design-php #breadcrumbs p span {
+    color: #fff !important;
+}
+
+.page-template-page-blue-design-php {
+    background: none repeat scroll 0 0 #6BA4B8 !important;
+}
+
+#newfoot {
+    float: none;
+    height: auto;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px !important;
+    padding-left: 1%;
+    width: 63.5%;
+    overflow: hidden;
+}
+#newfoot a {
+    color: #B8755F;
+}
+#newfoot p,
+#newfoot span {
+    color: #444C3F;
+}
+
+.page-template-page-blue-design-php a {
+    color: #363C38;
+}
+.page-template-page-blue-design-php a.faux-button {
+    color: #fff;
+}
+.page-template-page-blue-design-php p,
+.page-template-page-blue-design-php ol li,
+.page-template-page-blue-design-php ul li {
+    color: #fff;
+}
+
+.page-template-page-blue-design-php hr {
+    border-bottom-color: #363C38;
+}
+.page-template-page-blue-design-php table {
+    margin: 20px auto;
+    width: 75%;
+}
+.page-template-page-blue-design-php table td {
+    color: #fff;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+.page-template-page-blue-design-php h1 {
+    color: #363C38;
+}
+
+.page-template-page-blue-design-php h2,
+.page-template-page-blue-design-php h3 {
+    font-size:	28px;
+    font-weight:	400;
+    font-style:	normal;
+    font-size-adjust:	none;
+    text-transform:	uppercase;
+    line-height:	36px;
+    vertical-align:	baseline;
+    color: #363C38;
+}
+.page-template-page-blue-design-php h4 {
+    font-size:	28px;
+    font-weight:	400;
+    font-style:	normal;
+    font-size-adjust:	none;
+    text-transform:	uppercase;
+    line-height:	28px;
+    vertical-align:	baseline;
+    color: #fff;
+}
+.page-template-page-blue-design-php #content-full h1 span,
+.page-template-page-blue-design-php #content-full h2 span,
+.page-template-page-blue-design-php #content-full h3 span,
+.page-template-page-blue-design-php #content-full h4 span {
+    color:	#fff;
+}
+
+.page-template-page-blue-design-php #content-full p {font-size:1.3em;}
+
+.page-template-page-login-dev-php #aboutBoothsCardPage {
+    margin-top: 5px !important;
+}
+.page-template-page-login-dev-php #welcomeBanner {
+    margin: 0 !important;
+    min-height: 0 !important;
+}
+
+.page-template-page-login-dev-php .notice {
+    margin-top: 25px;
+}
+
+@media (max-width: 1370px) {
+    .page-template-page-login-dev-php #aboutBoothsCardPage {
+        margin-top: 25px !important;
+    }
+}
+
+@media (max-width: 600px) {
+    .page-template-page-login-dev-php #aboutBoothsCardPage {
+        margin-top: 0 !important;
+    }
+}
+
+@media (max-width: 560px) {
+    .page-template-page-blue-design-php table {
+        min-width: 300px;
+        max-width: 100%;
+        overflow-x: scroll;
+    }
+    /*#navigationHolder {
+        overflow: hidden;
+    }*/
+}
+
+@media (max-width: 1800px) {
+    #newfoot {
+        width: 73%;
+    }
+}
+
+
+/**
+* Michael Edits
+**/
+
+#homePageSlideHolder .preLoader {
+    display:none !important;
+}
+
+
+/**
+* Beer festival product pages
+**/
+.beer-product__container {
+    display: table;
+    width: 100%;
+    min-height: 360px;
+    text-align: center;
+    position:relative;
+    border:1px solid #CFCFCF
+}
+
+.beer-product__container > a {
+    display: table-cell;
+    vertical-align: middle;
+    text-align:center;
+}
+
+.beer-product__container img {
+    max-width: 110px !important;
+    display: block;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+.single-beer-product {
+    width:100% !important;
+}
+
+.ie8 .beer-product__container img {
+    max-height:360px !important
+}
+
+.ie8 .accountOneThirdHolder .topHolder .accountIcon {
+    display:none;
+}
+
+.ie8 .accountOneThirdHolder .topHolder p {
+    width:95%;
+}
+
+.ie8 #welcome-header img {
+    max-width:70% !important;
+    max-height: 60px !important;
+}
+
+
+
+
+
+/**
+* Rewards Banner on Accounts page
+**/
+
+.account-rewards__donate-banner {
+    background:url('../images/booths-donate-banner-bg') no-repeat;
+
+    max-width:100%;
+
+    text-align: center;
+    padding: 13.5em 5em 0 5em;
+    color: #15201e;
+    max-width:900px !important;
+    max-height:1110px;
+    font-size:7px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+    background-size: auto;
+    background-position: bottom center;
+    height: 800px;
+
+
+}
+
+
+@media screen and (min-width:500px) {
+    .account-rewards__donate-banner {
+        background-size:100% auto;
+        background-position: inherit;
+        height:1110px;
+    }
+}
+
+
+@media screen and (min-width:700px) {
+    .donate-banner__form,
+    .donate-banner__section {
+        margin-top: 2.8em;
+    }
+}
+
+
+
+@media screen and (min-width:790px) {
+    .account-rewards__donate-banner {
+        padding: 14em 2em;
+    }
+}
+
+@media screen and (min-width:650px) {
+    .account-rewards__donate-banner {
+        font-size: 7px;
+        padding: 17em 7.063em 0 7.063em;
+    }
+}
+
+
+
+@media screen and (min-width:950px) {
+    .account-rewards__donate-banner {
+        font-size: 9px;
+        padding-top: 13em;
+    }
+}
+
+
+@media screen and (min-width:1030px) {
+    .account-rewards__donate-banner {
+        font-size: 10px;
+        padding-top: 14em;
+    }
+}
+
+
+@media screen and (min-width:1030px) {
+    .account-rewards__donate-banner {
+        font-size: 10px;
+        padding-top: 14em;
+    }
+}
+
+@media screen and (min-width:1180px) {
+    .account-rewards__donate-banner {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:1500px) {
+    .account-rewards__donate-banner {
+        font-size: 14px;
+        padding-top: 13em;
+    }
+}
+
+
+@media screen and (min-width:1900px) {
+    .account-rewards__donate-banner {
+        font-size:16px;
+        padding-top:11.250em;
+    }
+}
+
+.donate-banner__title {
+    font-size: 3.75em;
+    line-height: 0.9;
+    text-transform: uppercase;
+}
+
+.donate-banner__subtitle {
+    font-size: 1.750em;
+    line-height: 1.2;
+    letter-spacing: -0.1px;
+    margin: 30px 0 0 0;
+    font-family:'Gill Sans W01 Light',Arial,Helvetica,sans-serif;
+}
+
+.donate-banner__section {
+    margin-top: 35px;
+}
+
+.donate-banner__section h4 {
+    font-size:1.5em;
+    font-family:'Gill Sans W02 Medium',Arial,Helvetica,sans-serif;
+    line-height: 1;
+    margin:0 0 10px 0;
+}
+
+.donate-banner__section strong {
+    font-weight:normal;
+    font-family:'Gill Sans W02 Medium',Arial,Helvetica,sans-serif;
+}
+
+.donate-banner__section p {
+    font-size:1.5em;
+    line-height: 1.2;
+    font-family:'Gill Sans W01 Light',Arial,Helvetica,sans-serif;
+}
+
+.donate-banner__section p a {
+    color: #15201e;
+    border-bottom:1px solid #15201e;
+}
+
+
+.donate-banner__form {
+    max-width: 600px;
+    margin: 35px auto 0 auto;
+    box-shadow:0 5px 29px rgba(0,0,0,0.15);
+}
+
+.donate-banner__form-input {
+    background: #FFF;
+    width: 69%;
+    padding: 15px 20px;
+    font-size: 1.5em;
+    height: auto;
+    display:inline-block;
+    margin:0 -3px 0 0;
+}
+
+form .donate-banner__form-submit {
+    color:#fff;
+    background: #15201e !important;
+    font-size: 1.5em;
+    height: auto;
+    display:inline-block;
+    margin:0;
+    width: 30.5% !important;
+    padding: 15px 0 !important;
+    text-transform: capitalize !important;
+}
+
+
+.donate-banner__form--top {
+    margin:20px auto;
+    box-shadow:none;
+    max-width:none;
+}
+
+.donate-banner__form--top input {
+    text-transform: none !important;
+    margin:0;
+    width: 49% !important;
+    display: inline-block !important;
+}
+
+form .donate-form-btn--positive {
+    background: #438800 !important;
+}
+
+
+.ie8 .donate-banner__section h4,
+.ie8 .donate-banner__section strong {
+    font-weight:bold;
+}
+
+.ie8 .donate-banner__section {
+    margin-top:60px;
+}
+
+.ie8 .donate-banner__form--top input {
+    font-size:20px;
+}
+
+
+
+
+/**
+ * New Account Page
+ */
+
+.accountBackground--nobg {
+    background:transparent !important;
+}
+
+.accountInformationIcon--card {
+   background-image: url("../images/account_sprite-card.png"); 
+}
+
+.accountInformationHolder--card a {
+    color:#5196b1;
+}
+
+.card-top-banner {
+    display:inline-block;
+    float:left;
+    margin-right:50px;
+    max-width: 35%;
+    margin-bottom: 30px;    
+}
+
+.benefit__container {
+    clear:both;
+}
+
+/* .card-welcome-header h3 {
+    padding-top: 60px !important;
+} */
+
+
+/**
+ * For opt in/out checkboxes on account loyalty page.
+ * -- Michael
+ */
+
+.opt__wrapper {
+    padding: 20px;
+    background: #F1F1F1;
+    margin: 10px 0 5px 0;
+    border: 2px solid #EBEBEB;
+}
+
+.opt__checkbox {
+    float:left;
+    margin: 0 10px 0px 0 !important;
+}
+
+.opt__label {
+    line-height: 1.6;
+}
+
+.opt__label-txt {
+    padding-left: 32px;
+    display: inline-block;
+	position:relative;
+	top: -3px;
+}
+
+.opt__copy {
+    font-size:16px;
+    line-height: 1.6;
+}

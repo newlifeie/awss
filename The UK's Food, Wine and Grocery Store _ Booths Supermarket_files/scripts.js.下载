@@ -1,0 +1,129 @@
+
+jQuery(window).resize(function() {
+    var width = jQuery('#my-rewards').outerWidth() - 10;
+
+    jQuery('.reward-pin').each(function() {
+        jQuery(this).attr("width", width / 2).attr("height", width / 2);
+    });
+});
+
+jQuery(window).load(function() {
+    var width = jQuery('#my-rewards').outerWidth() - 10;
+
+    jQuery('.reward-pin').each(function() {
+        jQuery(this).attr("width", width / 2).attr("height", width / 2);
+    });
+    jQuery(function() {
+      AOS.init();
+    });
+});
+
+// Avoid `console` errors in browsers that lack a console.
+(function() {
+    var method;
+    var noop = function () {};
+    var methods = [
+        'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
+        'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
+        'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
+        'timeStamp', 'trace', 'warn'
+    ];
+    var length = methods.length;
+    var console = (window.console = window.console || {});
+
+    while (length--) {
+        method = methods[length];
+
+        // Only stub undefined methods.
+        if (!console[method]) {
+            console[method] = noop;
+        }
+    }
+}());
+
+i=0;
+$(document).ready(function(){
+    // visual mode
+    // the iframe id
+    $("#wysiwyg-acf-field-right_main_text-5b2b940107478_ifr").ready(function () {
+        setInterval(function(){
+            var tinymceval = $('#wysiwyg-acf-field-right_main_text-5b2b940107478_ifr').contents().find('body').text();
+            var wordscount = tinymceval.split(" ");
+                    // you should crete a div with the 
+                    // the id = #wordcount to show count
+            $("#wordcount").text(wordscount.length);
+        }, 5000)
+    });
+
+    // html mode
+// #description is the id of the text area
+    $("#wysiwyg-acf-field-right_main_text-5b2b940107478").keypress(function(){
+        $("#wordcount").text(i+=1);
+    });
+	
+	
+	
+}); 
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+// NEW CHANGES - BW - MS - 2018
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+$(document).ready(function(){
+	
+	////////////////////////////////////////////////////////////////////
+	// Logger
+	////////////////////////////////////////////////////////////////////
+    wpcf7.cached = 0; 
+    console.log('No Refill');
+    
+	var logger_active = true;
+	function logger($data){ 
+		if(logger_active){
+			console.log($data)
+		}
+    }
+    
+    var d = new Date();
+    $( ".custom_datepicker" ).datepicker({
+        // maxDate: '-16y',
+        changeMonth: true,
+        changeYear: true,
+        dateFormat: "dd/mm/yy",
+        yearRange: '1910:'+d.getFullYear(),
+    });
+	
+	////////////////////////////////////////////////////////////////////
+	//new loyalty register functions
+	////////////////////////////////////////////////////////////////////
+	
+	//auto toggle trigger - between input or auto
+	$('#automatic_loyalty').on('change', function(){
+		var item = $(this);
+		var target_input = $('#loyalty_number');
+		var message = $('.auto_loyalty');
+		
+		if(item.is(":checked")){
+			target_input.prop('disabled', true);
+			target_input.addClass('disabled-input').val('');
+			target_input.addClass('hidden').val('');
+			message.removeClass('hidden');
+		} else {
+			target_input.prop('disabled', false);
+			target_input.removeClass('disabled-input');
+			target_input.removeClass('hidden');
+			message.addClass('hidden');
+		}
+	});
+	
+	////////////////////////////////////////////////////////////////////
+	// Overlays
+	////////////////////////////////////////////////////////////////////
+	
+	//register form submit overlay for laod visual feedback
+	$('#registerForm').on('submit', function(event){
+		$('body').addClass('overlay_active');
+		$('.overlay_main').removeClass('hidden');
+	});
+});
+

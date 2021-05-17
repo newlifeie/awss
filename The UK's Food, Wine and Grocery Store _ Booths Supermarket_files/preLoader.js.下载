@@ -1,0 +1,9 @@
+$(document).ready(function(){
+
+	/*$('img').load(function() {
+		$(this).each(function() {
+			$(this).animate({opacity : 1.0}, 1000);
+		})
+		$('#loading').delay(2000).fadeOut(1000);
+	}); */
+});	

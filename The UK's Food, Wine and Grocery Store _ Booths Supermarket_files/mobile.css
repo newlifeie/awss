@@ -1,0 +1,135 @@
+@media screen and (max-width:546px){
+
+    /* MOBILE CSS TO DISPLAY THE HOMEPAGE SLIDES */
+    .smallContentHolderBox .imageHolderDescription h2{
+        font-size:1.6em;
+    }
+
+    .largeAdvertHome img{
+        min-height:0 !important;
+    }
+
+    #homePageContentContainer {
+        float: left;
+        height: auto !important;
+        margin: 0;
+        width: 100%;
+    }
+
+    #homePageContentCentre {
+        display: block;
+        float: left;
+        margin: 0;
+        position: relative;
+        width: 100%;
+    }
+
+    #homePageSlideHolder {
+        float: left;
+        height: auto;
+        margin: 0;
+        top: 0;
+        width: 100%;
+        position:static;
+    }
+
+    .homePageSlide {
+        display: block;
+        float: left;
+        height: auto;
+        position: static;
+        width: 100%;
+    }
+
+    #homePageSlideTwo {
+        display: none;
+    }
+        #homePageSlideTwo:first-child{
+            display:block;
+        }
+
+
+    .largeAdvertHome, .slideOneQuater2 {
+        display: block;
+        float: left;
+        height: auto !important;
+        max-height: none;
+        position: relative;
+        width: 100%;
+    }
+
+    .largeAdvertHome, .slideOneQuater2 .imageHolderDescription{
+        bottom:0 !important;
+    }
+
+        .slideOneQuater2 .smallContentHolderBox {
+            float: left;
+            height: auto !important;
+            max-height: 225px !important;
+            max-width: none;
+            overflow:hidden;
+        }
+
+        .slideOneQuater2 .smallContentHolderBox .imageHolderDescription{
+            bottom:0 !important;
+        }
+
+    .smallContentHolderBox img {
+        display: block;
+        float: left;
+        height: auto !important;
+        max-height: none;
+        width: 100%;
+    }
+
+    .slideOneQuater3:last-child{
+        display:block;
+    }
+
+    .largeSlideImage {
+        display: none;
+    }
+
+    .largeAdvertHome .slideQuater2{
+        display: block;
+        float: left;
+        height: auto !important;
+        max-height: none;
+        position: relative;
+        width: 100%;
+    }
+        .largeAdvertHome .slideQuater2 .smallContentHolderBox .imageHolderDescription{
+            bottom:0 !important;
+        }
+
+    .smallContentHolderBox{
+        max-width:none;
+    }
+
+    .slideOneQuater, .slideOneQuater2, .slideOneQuater3,
+    .homeContentColumn #slideTest .slideOneQuater .smallContentHolderBox{
+        height:auto !important;
+    }
+
+    /* Other Fixes*/
+    h2#blogH2, h2#pintrestH2, h2#twitterH2{
+        width:80% !important;
+    }
+
+    .third img {
+        display: block;
+        float: none;
+        margin: 0 auto;
+        max-width: 100px;
+        width: auto;
+    }
+
+    #footer div.third p{
+        text-align:center;
+    }
+
+    #footer div.third.last{
+        padding-top:8px;
+    }
+
+}

@@ -1,0 +1,138 @@
+jQuery(document).ready(function($){
+	var Key = 'WM67-YJ18-PX13-UU88';
+	var SearchTerm = '';
+	var PreferredLanguage = 'English';
+	var Filter = 'None';
+	var UserName = 'BOOTH11114';
+	var Id = '';
+	
+	$('#find-postcode').on('click', function(){
+		SearchTerm = $('#postcode').val();
+		$('#loader').fadeIn(300);
+		if(SearchTerm != ''){
+			find_postcode(Key, SearchTerm, PreferredLanguage, Filter, UserName);
+		}else{
+			$('#loader').fadeOut(300);
+		}
+	});
+	
+	$('#found-postcodes').on('change', function(){
+		
+		Id = $(this).val();
+
+		if(Id == 'select') return false;
+		$('#loader').fadeIn(300);
+		if($(this).hasClass('edit-details')){
+			find_address_by_id_edit(Key, Id, PreferredLanguage, UserName);
+		}else{
+			find_address_by_id(Key, Id, PreferredLanguage, UserName);
+		}
+	});
+	
+	$('.manual-address').on('click', function(e){
+		e.preventDefault();
+		$('.reveal-address').slideDown(300);
+	});
+	
+	function find_postcode(Key, SearchTerm, PreferredLanguage, Filter, UserName){
+		$.getJSON("https://services.postcodeanywhere.co.uk/PostcodeAnywhere/Interactive/Find/v1.10/json3.ws?callback=?",
+		{
+			Key: Key,
+			SearchTerm: SearchTerm,
+			PreferredLanguage: PreferredLanguage,
+			Filter: Filter,
+			UserName: UserName
+		},
+		function (data) {
+			// Test for an error
+			if (data.Items.length == 1 && typeof(data.Items[0].Error) != "undefined") {
+				// Show the error message
+				alert(data.Items[0].Description);
+			}
+			else {
+				// Check if there were any items found
+				if (data.Items.length == 0)
+					alert("Sorry, there were no results");
+				else {
+					$('#found-postcodes').empty();
+					$('#found-postcodes').append('<option value="select">Select Address</option>');
+					for(var i = 0; i < data.Items.length; i++){
+						$('#found-postcodes').append('<option value="'+data.Items[i].Id+'">'+data.Items[i].StreetAddress+'</option>');
+					}
+					$('#loader').fadeOut(300);
+					$('#found-postcodes').fadeIn(300);
+				}
+			}
+		});
+	}
+	
+	function find_address_by_id(Key, Id, PreferredLanguage, UserName) {
+
+
+
+		$.getJSON("https://services.postcodeanywhere.co.uk/PostcodeAnywhere/Interactive/RetrieveById/v1.30/json3.ws?callback=?",
+		{
+			Key: Key,
+			Id: Id,
+			PreferredLanguage: PreferredLanguage,
+			UserName: UserName
+		},
+		function (data) {
+			// Test for an error
+			if (data.Items.length == 1 && typeof(data.Items[0].Error) != "undefined") {
+				// Show the error message
+				alert(data.Items[0].Description);
+				$('#loader').fadeOut(300);
+			}
+			else {
+				// Check if there were any items found
+				if (data.Items.length == 0)
+					alert("Sorry, there were no results");
+				else {
+					$('#loader').fadeOut(300);
+					$('#address_1, #address1').val(data.Items[0].Line1);
+					$('#address_2, #address2').val(data.Items[0].Line2);
+					$('#address_3, #address3').val(data.Items[0].Line3);
+					$('#address_3, #address3').val(data.Items[0].Line3);
+					$('#postcode').val(data.Items[0].Postcode);
+					$('#town').val(data.Items[0].PostTown);
+					$('#county').val(data.Items[0].County);
+					$('.reveal-address').slideDown(300);
+				}
+			}
+		});
+	}
+	
+	function find_address_by_id_edit(Key, Id, PreferredLanguage, UserName) {
+		$.getJSON("https://services.postcodeanywhere.co.uk/PostcodeAnywhere/Interactive/RetrieveById/v1.30/json3.ws?callback=?",
+		{
+			Key: Key,
+			Id: Id,
+			PreferredLanguage: PreferredLanguage,
+			UserName: UserName
+		},
+		function (data) {
+			// Test for an error
+			if (data.Items.length == 1 && typeof(data.Items[0].Error) != "undefined") {
+				// Show the error message
+				alert(data.Items[0].Description);
+				$('#loader').fadeOut(300);
+			}
+			else {
+				// Check if there were any items found
+				if (data.Items.length == 0)
+					alert("Sorry, there were no results");
+				else {
+					$('#address_line_1').val(data.Items[0].Line1);
+					$('#address_line_2').val(data.Items[0].Line2);
+					$('#address_line_3').val(data.Items[0].Line3);
+					$('#postcode').val(data.Items[0].Postcode);
+					$('#town').val(data.Items[0].PostTown);
+					$('#county').val(data.Items[0].County);
+					$('#loader').fadeOut(300);
+				}
+			}
+		});
+	}
+	
+});

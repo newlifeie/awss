@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+
+
+/* -------- RESET */
+
+body {line-height: 1;}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block}
+
+table {border-collapse:collapse;border-spacing:0}
+
+address, caption, cite, code, dfn, th, var {font-style:normal;font-weight:normal}
+
+caption, th {text-align:left}
+
+blockquote, q {quotes:none}
+
+blockquote:before, blockquote:after, q:before, q:after {content:'';content:none;}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, del, dfn, img, ins, kbd, q, samp, tt, var, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+
+{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;font-weight:normal}
+
+
+
+/* -------- GLOBAL TAGS */
+
+html {overflow-y:scroll;}
+
+p, ul, ol, dl, div.textwidget, address {line-height:20px;margin:0 0 20px 0}
+
+ul ul, ol ol, ul ol, ol ul {margin-bottom:0}
+
+q, i, em, cite {font-style:italic;font-weight:inherit}
+
+b, strong {font-weight:bold;font-style:inherit}
+
+s, del {text-decoration:line-through}
+
+small {font-size:0.75em;line-height:20px}
+
+pre, code {font-family:monospace}
+
+pre {overflow:auto;margin-bottom:1.8em;line-height:20px}
+
+code {line-height:20px}
+
+img {max-width:100%;height:auto;font-style:italic;color:#c00}
+
+object, embed, video {max-width:100%;height:auto}
+
+
+
+/* -------- GLOBAL CLASSES */
+
+.clear {clear:both}
+
+img.left, .alignleft {float:left}
+
+img.right, .alignright {float: right}
+
+
+
+/* -------- QUOTES */
+
+blockquote {font-style:italic;}
+
+blockquote p:before {content: '"'; }
+
+blockquote p:after {content: '"'; }
